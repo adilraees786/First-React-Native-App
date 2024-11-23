@@ -5,10 +5,11 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { View , Text} from 'react-native';
+import { View , Text, StyleSheet} from 'react-native';
 
 
 
@@ -32,25 +33,31 @@ export default function RootLayout() {
   }
 
   return (
-    <View 
-    style={{ 
-      height: 300,
-       justifyContent:"center",
-       flexDirection:"row",
-       backgroundColor:"red"
-    
-    }} >
-    
-      <View style={{flex: 1, backgroundColor: "black" }}/>
-      <View style={{flex: 1, backgroundColor: "orange" }}/>
-      <View style={{flex: 1, backgroundColor: "green" }}/>
-      <View style={{flex: 1, backgroundColor: "yellow" }}/>
+    <View  style={styles.container} >
+<View style={styles.header}>
+<MaterialIcons name="menu" size={24} color="black" />
+<MaterialIcons name="add-call" size={24} color="black" />
+</View>
 
-    
+
     </View>
   );
 }
 
-<style>
+const styles = StyleSheet.create({
+  container:{
+   flex:1,
+  },
+  header:{
+    height: 50,
+    borderBlockColor:'#CCC',
+    borderBottomWidth: 1,
+    flexDirection:"row",
+    justifyContent:"space-between",
+    alignItems:"center",
+  
 
-</style>
+
+  }
+  
+});
