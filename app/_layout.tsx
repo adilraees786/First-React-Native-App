@@ -32,15 +32,13 @@ export default function RootLayout() {
   }
 
   return (
-    <View style={{flex:1,
-      backgroundColor:"red"
+    <View style={{flex: 1, backgroundColor:"red", justifyContent:"center"}} >
+     
+      <View style={{flex: 1, backgroundColor: "black" }}/>
+      <View style={{flex: 1, backgroundColor: "orange" }}/>
+      <View style={{flex: 1, backgroundColor: "green" }}/>
+      <View style={{flex: 1, backgroundColor: "yellow" }}/>
 
-    }}>
-      <Text style={{textAlign:"center",
-      fontSize:41,
-      
-
-      }}>Hello My first Ract Native App</Text>
       
     </View>
   );
