@@ -36,6 +36,8 @@ export default function RootLayout() {
     <View  style={styles.container} >
 <View style={styles.header}>
 <MaterialIcons name="menu" size={24} color="black" />
+<Text style={styles.title}>Welcome to the app</Text>
+
 <MaterialIcons name="add-call" size={24} color="black" />
 </View>
 
@@ -56,8 +58,12 @@ const styles = StyleSheet.create({
     justifyContent:"space-between",
     alignItems:"center",
   
-
+  },
+  title:{
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+    marginHorizontal: 10,
 
   }
-  
 });
