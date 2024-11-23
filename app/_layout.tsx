@@ -8,7 +8,9 @@ import 'react-native-reanimated';
 
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
+import { View , Text} from 'react-native';
+
+
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -30,10 +32,20 @@ export default function RootLayout() {
   }
 
   return (
-    <view>
-      <text>hello</text>
+    <View style={{flex:1,
+      backgroundColor:"red"
+
+    }}>
+      <Text style={{textAlign:"center",
+      fontSize:41,
       
+
+      }}>Hello My first Ract Native App</Text>
       
-    </view>
+    </View>
   );
 }
+
+<style>
+
+</style>
