@@ -32,14 +32,21 @@ export default function RootLayout() {
   }
 
   return (
-    <View style={{flex: 1, backgroundColor:"red", justifyContent:"center"}} >
-     
+    <View 
+    style={{ 
+      height: 300,
+       justifyContent:"center",
+       flexDirection:"row",
+       backgroundColor:"red"
+    
+    }} >
+    
       <View style={{flex: 1, backgroundColor: "black" }}/>
       <View style={{flex: 1, backgroundColor: "orange" }}/>
       <View style={{flex: 1, backgroundColor: "green" }}/>
       <View style={{flex: 1, backgroundColor: "yellow" }}/>
 
-      
+    
     </View>
   );
 }
