@@ -80,11 +80,20 @@ borderRadius: 12,
 
   },
   infoView:{
-height: 40,
+height: 45,
 flexDirection: "row",
 justifyContent:"space-around",
 alignItems:"center",
-backgroundColor:"red",
+backgroundColor:"#fff",
+shadowColor: "#000",
+shadowOffset: {
+	width: 0,
+	height: 10,
+},
+shadowOpacity: 0.51,
+shadowRadius: 13.16,
+
+elevation: 20,
 borderRadius: 12,
 marginHorizontal: 20,
 marginTop: -15,
