@@ -44,6 +44,9 @@ source={{
  </View>
 
  <View style={styles.Buttomcontainer}>
+<View style={styles.row}></View>
+<View style={styles.row}></View>
+<View style={styles.row}></View>
 
  </View>
 
@@ -107,8 +110,17 @@ marginTop: -15,
   },
   Buttomcontainer:{
     flex:1,
-    backgroundColor:"red"
+  
+    margin:20,
+    gap:10,
    
   
-      }
+      },
+      row:{
+       flex: 1,
+       borderWidth:1,
+       
+      
+
+      } 
 });
