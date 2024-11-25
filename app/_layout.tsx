@@ -24,9 +24,9 @@ export default function Bykea() {
   return (
     <View style={styles.container} >
       <View style={styles.header}>
-        <MaterialIcons name="menu" size={24} color="black" />
+        <MaterialIcons name="menu" size={24} color="green" />
         <Text style={styles.title}>BYKEA</Text>
-        <MaterialIcons name="add-call" size={24} color="black" />
+        <MaterialIcons name="add-call" size={24} color="green" />
       </View>
 {/* Banner image */}
 <View style={styles.Bannerimage}>
@@ -39,6 +39,11 @@ source={{
 </View>
  {/* info view */}
  <View style={styles.infoView}>
+ <MaterialIcons name="attach-money" size={24} color="green" />
+ <MaterialIcons name="message" size={24} color="green" />
+ </View>
+
+ <View style={styles.Buttomcontainer}>
 
  </View>
 
@@ -64,6 +69,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing:3,
     fontSize: 21,
+    color: "green"
     
 
   },
@@ -99,4 +105,10 @@ marginHorizontal: 20,
 marginTop: -15,
 
   },
+  Buttomcontainer:{
+    flex:1,
+    backgroundColor:"red"
+   
+  
+      }
 });
