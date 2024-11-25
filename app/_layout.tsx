@@ -9,12 +9,14 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet , Dimensions} from 'react-native';
 
 
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
+
+const SCREEN_HEIGHT = Dimensions.get('screen').height;
 
 export default function Bykea() {
   
@@ -26,7 +28,10 @@ export default function Bykea() {
         <Text style={styles.title}>BYKEA</Text>
         <MaterialIcons name="add-call" size={24} color="black" />
       </View>
+{/* Banner image */}
+<View style={styles.Bannerimage}>
 
+</View>
 
     </View>
   );
@@ -52,5 +57,11 @@ const styles = StyleSheet.create({
     color: '',
     marginHorizontal: 10,
 
+  },
+  Bannerimage: {
+    height: SCREEN_HEIGHT / 4,
+    backgroundColor: '#DEE3EB',
+   
+  
   }
 });
