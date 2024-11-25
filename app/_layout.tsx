@@ -62,6 +62,17 @@ export default function Bykea() {
     </View>
   );
 }
+ 
+const Card= ({bgcolor, icon, title}) => {
+  return (
+    <View style={styles.card}>
+      <Text style={{textAlign: "right"}}> = {title}</Text>
+
+    </View>
+  )
+}
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -134,7 +145,6 @@ const styles = StyleSheet.create({
   card: {
     flex: 1,
     borderWidth: 1,
-    borderBlockColor: "black",
     borderRadius: 12,
   }
 });
