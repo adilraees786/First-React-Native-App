@@ -9,36 +9,23 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { View , Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
+export default function Bykea() {
+  
 
   return (
-    <View  style={styles.container} >
-<View style={styles.header}>
-<MaterialIcons name="menu" size={24} color="black" />
-<Text style={styles.title}>Welcome to the app</Text>
-<MaterialIcons name="add-call" size={24} color="black" />
-</View>
+    <View style={styles.container} >
+      <View style={styles.header}>
+        <MaterialIcons name="menu" size={24} color="black" />
+        <Text style={styles.title}>BYKEA</Text>
+        <MaterialIcons name="add-call" size={24} color="black" />
+      </View>
 
 
     </View>
@@ -46,23 +33,23 @@ export default function RootLayout() {
 }
 
 const styles = StyleSheet.create({
-  container:{
-   flex:1,
+  container: {
+    flex: 1,
   },
-  header:{
+  header: {
     height: 50,
-    borderBlockColor:'#CCC',
+    borderBlockColor: '#CCC',
     borderBottomWidth: 1,
-    flexDirection:"row",
-    justifyContent:"space-between",
-    alignItems:"center",
-   padding:12,
-  
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 12,
+
   },
-  title:{
+  title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#333',
+    color: '',
     marginHorizontal: 10,
 
   }
