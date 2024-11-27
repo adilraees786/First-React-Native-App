@@ -49,12 +49,12 @@ export default function Bykea() {
           <View style={styles.card}></View>
         </View>
         <View style={styles.row}>
-          <View style={styles.card}>3</View>
-          <View style={styles.card}>4</View>
+          <View style={styles.card}></View>
+          <View style={styles.card}></View>
         </View>
         <View style={styles.row}>
-          <View style={styles.card}>5</View>
-          <View style={styles.card}>6</View>
+          <View style={styles.card}></View>
+          <View style={styles.card}></View>
         </View>
 
       </View>
