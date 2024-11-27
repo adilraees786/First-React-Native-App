@@ -45,8 +45,8 @@ export default function Bykea() {
 
       <View style={styles.Buttomcontainer}>
         <View style={styles.row}>
-          <View style={styles.card}>1</View>
-          <View style={styles.card}>2</View>
+          <View style={styles.card}></View>
+          <View style={styles.card}></View>
         </View>
         <View style={styles.row}>
           <View style={styles.card}>3</View>
