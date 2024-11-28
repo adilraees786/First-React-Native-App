@@ -45,16 +45,16 @@ export default function Bykea() {
 {/* Buttom view */}
       <View style={styles.Buttomcontainer}>
         <View style={styles.row}>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#c1e1c5"}/>
+        <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
         </View>
         <View style={styles.row}>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#c1e1c5"}/>
+        <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
         </View>
         <View style={styles.row}>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#c1e1c5"}/>
+        <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
         </View>
 
       </View>
@@ -67,7 +67,7 @@ const Card= ({bgcolor, icon, title}) => {
   return (
     <View style={[styles.card ,{backgroundColor: bgcolor } ]}>
       <Text style={{textAlign: "right"}}> {title}</Text>
-      <MaterialIcons name={icon} size={24} color="green" />
+      <MaterialIcons name={icon} size={50} color="black" />
     </View>
   )
 }
@@ -130,5 +130,9 @@ const styles = StyleSheet.create({
   },
   Buttomcontainer: { flex: 1, margin: 20, gap: 15, },
   row: { flex: 1,flexDirection: "row", gap: 15,},
-  card: { flex: 1, borderWidth: 1, borderRadius: 12, }
+  card: { flex: 1, 
+     borderRadius: 12,
+     padding:10,
+    justifyContent:"space-between"
+    }
 });
