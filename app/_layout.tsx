@@ -66,7 +66,7 @@ export default function Bykea() {
 const Card= ({bgcolor, icon, title}) => {
   return (
     <View style={[styles.card ,{backgroundColor: bgcolor } ]}>
-      <Text style={{textAlign: "right"}}> = {title}</Text>
+      <Text style={{textAlign: "right"}}> {title}</Text>
       <MaterialIcons name={icon} size={24} color="green" />
     </View>
   )
