@@ -42,19 +42,19 @@ export default function Bykea() {
         <MaterialIcons name="attach-money" size={24} color="green" />
         <MaterialIcons name="message" size={24} color="green" />
       </View>
-
+{/* Buttom view */}
       <View style={styles.Buttomcontainer}>
         <View style={styles.row}>
-          <View style={styles.card}></View>
-          <View style={styles.card}></View>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
         </View>
         <View style={styles.row}>
-          <View style={styles.card}></View>
-          <View style={styles.card}></View>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
         </View>
         <View style={styles.row}>
-          <View style={styles.card}></View>
-          <View style={styles.card}></View>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
+        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#ccc"}/>
         </View>
 
       </View>
@@ -65,9 +65,9 @@ export default function Bykea() {
  
 const Card= ({bgcolor, icon, title}) => {
   return (
-    <View style={styles.card}>
+    <View style={[styles.card ,{backgroundColor: bgcolor } ]}>
       <Text style={{textAlign: "right"}}> = {title}</Text>
-
+      <MaterialIcons name={icon} size={24} color="green" />
     </View>
   )
 }
@@ -128,23 +128,7 @@ const styles = StyleSheet.create({
     marginTop: -15,
 
   },
-  Buttomcontainer: {
-    flex: 1,
-    margin: 20,
-    gap: 15,
-
-
-  },
-  row: {
-    flex: 1,
-
-    flexDirection: "row",
-    gap: 15,
-
-  },
-  card: {
-    flex: 1,
-    borderWidth: 1,
-    borderRadius: 12,
-  }
+  Buttomcontainer: { flex: 1, margin: 20, gap: 15, },
+  row: { flex: 1,flexDirection: "row", gap: 15,},
+  card: { flex: 1, borderWidth: 1, borderRadius: 12, }
 });
