@@ -63,14 +63,22 @@ export default function Bykea() {
   );
 }
  
-const Card= ({bgcolor, icon, title}) => {
+const Card= ({
+  bgcolor,
+   icon,
+    title,
+   }: {
+    bgcolor: string;
+     icon: any;
+      title: string;
+    }) => {
   return (
     <View style={[styles.card ,{backgroundColor: bgcolor } ]}>
       <Text style={{textAlign: "right"}}> {title}</Text>
       <MaterialIcons name={icon} size={50} color="black" />
     </View>
-  )
-}
+  );
+};
 
 
 
