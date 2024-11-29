@@ -49,11 +49,11 @@ export default function Bykea() {
         <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
         </View>
         <View style={styles.row}>
-        <Card title={"Carpol"} icon={"delivery-dining"} bgcolor={"#c1e1c5"}/>
-        <Card title={"Ride"} icon={"mobile-friendly"} bgcolor={"#bedadc"}/>
+        <Card title={"Delivery"} icon={"delivery-dining"} bgcolor={"#c1e1c5"}/>
+        <Card title={"Mobile"} icon={"mobile-friendly"} bgcolor={"#bedadc"}/>
         </View>
         <View style={styles.row}>
-        <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#c1e1c5"}/>
+        <Card title={"Shop"} icon={"shop"} bgcolor={"#c1e1c5"}/>
         <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
         </View>
 
