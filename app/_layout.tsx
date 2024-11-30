@@ -26,7 +26,7 @@ export default function Bykea() {
       <View style={styles.header}>
         <MaterialIcons name="menu" size={24} color="#194D33" />
         <Text style={styles.title}>BYKEA</Text>
-        <MaterialIcons name="add-call" size={24} color="green" />
+        <MaterialIcons name="add-call" size={24} color="#194D33" />
       </View>
       {/* Banner image */}
       <View style={styles.Bannerimage}>
