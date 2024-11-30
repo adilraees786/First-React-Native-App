@@ -24,7 +24,7 @@ export default function Bykea() {
   return (
     <View style={styles.container} >
       <View style={styles.header}>
-        <MaterialIcons name="menu" size={24} color="green" />
+        <MaterialIcons name="menu" size={24} color="#194D33" />
         <Text style={styles.title}>BYKEA</Text>
         <MaterialIcons name="add-call" size={24} color="green" />
       </View>
