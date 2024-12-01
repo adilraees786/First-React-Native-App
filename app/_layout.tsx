@@ -50,11 +50,11 @@ export default function Bykea() {
         </View>
         <View style={styles.row}>
         <Card title={"Delivery"} icon={"delivery-dining"} bgcolor={"#fbead6"}/>
-        <Card title={"Mobile"} icon={"mobile-friendly"} bgcolor={"#bedadc"}/>
+        <Card title={"Mobile"} icon={"mobile-friendly"} bgcolor={"#c1c6fe"}/>
         </View>
         <View style={styles.row}>
-        <Card title={"Shop"} icon={"shop"} bgcolor={"#c1e1c5"}/>
-        <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bedadc"}/>
+        <Card title={"Shop"} icon={"shop"} bgcolor={"#c9e3fe"}/>
+        <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#fffeb3"}/>
         </View>
 
       </View>
