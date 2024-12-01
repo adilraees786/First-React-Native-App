@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     letterSpacing: 3,
     fontSize: 21,
-    color: "green"
+    color: "#194D33"
 
 
   },
