@@ -44,10 +44,12 @@ export default function Bykea() {
       <View style={styles.Buttomcontainer}>
         <View style={styles.row}>
         <Card title={"Carpol"} icon={"electric-car"} bgcolor={"#d4f4ff"} />
+
         <Card title={"Ride"} icon={"bike-scooter"} bgcolor={"#bfefc5"} />
         </View>
         <View style={styles.row}>
         <Card title={"Delivery"} icon={"delivery-dining"} bgcolor={"#fbead6"}/>
+        
         <Card title={"Mobile"} icon={"mobile-friendly"} bgcolor={"#c1c6fe"}/>
         </View>
         <View style={styles.row}>
